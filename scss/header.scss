@@ -1,0 +1,66 @@
+%roboto{
+	font-family: 'Roboto', sans-serif;
+}
+%prata{
+	font-family: 'Prata', serif;
+}
+%playfair{
+	font-family: 'Playfair Display', serif;
+}
+$grey: #444240;
+$pink: #D4B098;
+$light-grey: #555248;
+$black: #555248;
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrap{
+	margin: 0 auto;
+	max-width: 1240px;
+	header{		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		nav{
+			width: 100%;
+			justify-content: space-between;
+			display: flex;
+
+			.logo{
+				display: flex;
+				padding: 1.5em;
+				@extend %playfair;
+				color: $light-grey;
+			}
+			.main_nav{
+				display: flex;
+				align-items: center;
+				@extend %roboto;
+					
+				a{
+					padding: 1.5em 2em;
+					color: $black;
+					text-decoration: none;
+					transition: 0.5s;
+				}
+				a:hover{
+					text-decoration: underline;
+					color: grey;
+				}
+			}						
+			.action_nav{
+				display: flex;
+				align-items: center;
+				margin-right: 1.5em;
+
+				a{
+					padding: 0.5em;
+				}
+			}
+		}
+	}
+}

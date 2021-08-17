@@ -1,0 +1,290 @@
+@import 'header.scss';
+
+#katalog{
+	color: #b0b0b0;
+}
+
+.list{
+
+	.way_list{
+		display: flex;
+		align-items: flex-start;
+
+		a{
+			padding: 2em 0.7em;
+			position: relative;
+			@extend %roboto;
+			color: grey;
+			transition: 0.5s;
+			border-bottom: 1px solid transparent;
+			border-top: 1px solid transparent;
+
+			&:after{
+				content: '>';
+				color: #b0b0b0;
+				position: absolute;
+				right: -5px;
+				top: 39%;
+			}
+		}
+		a:hover{
+			color: black;
+			border-bottom: 1px solid black;
+			border-top: 1px solid black;
+		}
+		.last{
+			color: black;
+
+			&:after{
+				content: '';
+			}
+		}
+	}
+	.main_list{
+		
+		.head_block{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			h1{
+				@extend %playfair;
+				font-weight: normal;
+				font-size: 35px;
+				padding: 1em 0;
+			}
+			.sort{
+				@extend %roboto;
+				color: #b0b0b0;
+				.button{
+					color: black;
+					font-weight: bold;
+					padding: 2em 0;
+				}
+			}
+		}
+		.inner_list{
+			display: flex;
+			justify-content: space-between;
+			
+			.filters{
+				width: 25%; 
+				@extend %roboto;
+
+				.cost{
+					
+
+					h3{
+						padding: 1em 0;
+					}
+					.inputs{
+						text-align: right;
+
+						span{
+							margin-left: 20px;
+						}
+						input{
+							width: 20%;	
+							height: 30px;
+							border: 1px solid #b0b0b0;;
+							border-radius: 3px;
+						}
+					}
+				}
+				.brands{
+
+					.title{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						h3{
+							padding: 1em 0;
+						}
+						.line{
+							width: 20px;
+							height: 2px;
+							background: black;
+						}
+					}
+					.brand_list{
+
+						.brand{
+							padding: 0.7em 0;
+							color: grey;
+							display: flex;
+							align-items: center;
+							font-size: 18px;
+
+							input{
+								margin-right: 10px;
+								border: 1px solid grey;
+								border-radius: 0;
+								width: 18px;
+								height: 18px;
+							}
+						}
+					}
+				}
+				.add_settings{
+					font-size: 18px;
+					margin: 20px 0;
+
+					& > *{
+						padding: 0.5em 0;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						.plus{
+							font-size: 26px;
+							color: grey;
+						}
+					}
+				}
+				.discharge{
+					padding: 2em;
+					display: flex;
+					justify-content: center;
+
+					span{
+						transition: 0.5s;
+						border-bottom: 1px solid transparent;
+					}
+					span:hover{
+						color: grey;
+						border-bottom: 1px solid grey;
+					}
+				}
+			}
+			.watch_list{
+				width: 65%;
+				display: flex;
+				justify-content: space-between;
+				align-content: space-between;
+				flex-wrap: wrap;
+
+				.watch{
+					width: 30%;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					@extend %roboto;
+					border: 3px dotted transparent;
+					transition: 0.5s;
+					padding: 0.5em;
+
+					h3{
+						color: black;
+						font-weight: normal;
+						font-size: 20px;
+					}
+					.cost{
+						color: grey;
+						font-size: 20px;
+					}
+					img{
+						width: 100%;
+					}
+				}
+				.watch:hover{
+					border: 3px dotted grey;
+				}
+				.offer{
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					align-items: center;
+					background: #eba181;
+					position: relative;
+
+					.info_block{
+						@extend %playfair;
+						width: 40%;
+						margin-left: 20%;
+						color: white;
+						font-size: 18px;
+						text-align: right;
+					}
+					h3{
+						font-size: 50px;
+					}
+					img{
+						width: 50%;
+						height: 80%;
+						position: absolute;
+						top: 10%;
+						left: 50%;
+					}
+				}
+			}
+		}
+	}
+	.sliders{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 22px;
+		@extend %roboto;
+		padding-right: 30%;
+
+		img{
+			width: 15px;
+			height: 15px;
+		}
+		span{
+			padding: 2em 1em;
+		}
+		.arrow_right{
+			transform: rotate(180deg);
+		}
+	}
+}
+.straps{
+
+	.head_block{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2em 0;
+
+		h1{
+			font-weight: normal;
+			font-size: 40px;
+			@extend %playfair;
+		}
+		span{
+			@extend %roboto;
+		}
+	}
+	.straps_list{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 5em;
+
+		.strap{
+			@extend %roboto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			transition: 0.5s;
+			border: 3px dotted transparent;
+			padding: 0.5em;
+
+			.name{
+				font-size: 20px;
+				margin-bottom: 0.2em;
+			}
+			.cost{
+				color: grey;
+				font-size: 20px;
+			}
+		}
+		.strap:hover{
+			border: 3px dotted grey;
+		}
+	}
+}
+
+@import 'footer.scss';
+

@@ -1,0 +1,155 @@
+@import "header.scss";
+
+.way_list{
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 2em;
+
+	a{
+		padding: 2em 0.7em;
+		position: relative;
+		@extend %roboto;
+		color: grey;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		transition: 0.5s;
+
+		&:after{
+			content: '>';
+			color: #b0b0b0;
+			position: absolute;
+			right: -5px;
+			top: 39%;
+		}
+	}
+	a:hover{
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	.last{
+		color: black;
+
+		&:after{
+			content: '';
+		}
+	}
+}
+
+.watch_info{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 7em;
+
+	.watch_img{
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+
+		& > img{
+			display: flex;
+			justify-content: center;
+		}
+		.add_images{
+
+			img{
+				width: 120px;
+			}
+		}
+	}
+	.watch_text{
+		width: 50%;
+
+		.title_block{
+			display: flex;
+			justify-content: space-between;
+			@extend %roboto;
+			margin-bottom: 1em;
+
+			.title{
+				
+				h2{
+					font-size: 26px;
+					margin-bottom: 0.5em;
+				}		
+				.cost{
+					color: grey;
+					font-size: 26px;
+				}		
+			}
+			.like{
+
+				img{
+					width: 30px;
+					height: 25px;
+				}
+			}
+		}
+		.main_text{
+			@extend %roboto;
+
+			.info_upper_block{
+				display: flex;
+				justify-content: flex-start;
+				padding: 3em 0;
+
+				span{
+					margin-right: 5em;
+					font-size: 20px;
+					border-bottom: 1px solid transparent;
+					transition: 0.5s;
+				}
+				span:hover{
+					border-bottom: 1px solid black;
+				}
+			}
+			p{
+				color: $grey;
+				font-size: 18px;
+				margin: 1em 0;
+			}
+			& > a{
+				display: inline-block;
+				margin: 5em 0;
+				background: #31302C;
+				color: white;
+				padding: 1.5em 3em;
+				border: 1px solid transparent;
+				transition: 0.5s;
+			}
+			& > a:hover{
+				background: white;
+				color: black;
+				border: 1px solid black;
+			}
+		}
+	}
+}
+.had_watched{
+	margin-bottom: 5em;
+
+	.head_block{
+
+		h3{
+			@extend %playfair;
+			font-size: 35px;
+			font-weight: normal;
+			margin-bottom: 2em;
+		}
+	}
+	.watches{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.watch{
+			@extend %roboto;
+			font-size: 18px;
+
+			.cost{
+				color: $grey;
+			}
+		}
+	}
+}
+
+@import "footer.scss";

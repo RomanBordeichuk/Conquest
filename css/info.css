@@ -1,0 +1,275 @@
+footer .wrap nav > *, .had_watched .watches .watch, .watch_info .watch_text .main_text, .watch_info .watch_text .title_block, .way_list a, .wrap header nav .main_nav {
+  font-family: "Roboto", sans-serif;
+}
+
+footer .wrap .contacts .logo, .had_watched .head_block h3, .wrap header nav .logo {
+  font-family: "Playfair Display", serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+.wrap header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrap header nav {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrap header nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5em;
+  color: #555248;
+}
+.wrap header nav .main_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrap header nav .main_nav a {
+  padding: 1.5em 2em;
+  color: #555248;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.wrap header nav .main_nav a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+.wrap header nav .action_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.5em;
+}
+.wrap header nav .action_nav a {
+  padding: 0.5em;
+}
+
+.way_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2em;
+}
+.way_list a {
+  padding: 2em 0.7em;
+  position: relative;
+  color: grey;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.way_list a:after {
+  content: ">";
+  color: #b0b0b0;
+  position: absolute;
+  right: -5px;
+  top: 39%;
+}
+.way_list a:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.way_list .last {
+  color: black;
+}
+.way_list .last:after {
+  content: "";
+}
+
+.watch_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7em;
+}
+.watch_info .watch_img {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.watch_info .watch_img > img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watch_info .watch_img .add_images img {
+  width: 120px;
+}
+.watch_info .watch_text {
+  width: 50%;
+}
+.watch_info .watch_text .title_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+.watch_info .watch_text .title_block .title h2 {
+  font-size: 26px;
+  margin-bottom: 0.5em;
+}
+.watch_info .watch_text .title_block .title .cost {
+  color: grey;
+  font-size: 26px;
+}
+.watch_info .watch_text .title_block .like img {
+  width: 30px;
+  height: 25px;
+}
+.watch_info .watch_text .main_text .info_upper_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 3em 0;
+}
+.watch_info .watch_text .main_text .info_upper_block span {
+  margin-right: 5em;
+  font-size: 20px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.watch_info .watch_text .main_text .info_upper_block span:hover {
+  border-bottom: 1px solid black;
+}
+.watch_info .watch_text .main_text p {
+  color: #444240;
+  font-size: 18px;
+  margin: 1em 0;
+}
+.watch_info .watch_text .main_text > a {
+  display: inline-block;
+  margin: 5em 0;
+  background: #31302C;
+  color: white;
+  padding: 1.5em 3em;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.watch_info .watch_text .main_text > a:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.had_watched {
+  margin-bottom: 5em;
+}
+.had_watched .head_block h3 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 2em;
+}
+.had_watched .watches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.had_watched .watches .watch {
+  font-size: 18px;
+}
+.had_watched .watches .watch .cost {
+  color: #444240;
+}
+
+footer {
+  width: 100%;
+  background: #444240;
+  padding: 5em;
+}
+footer .wrap {
+  margin: 0 auto;
+  max-width: 1240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .wrap nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .wrap nav > * {
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+footer .wrap .contacts .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+}
